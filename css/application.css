@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0; }
+
+.home {
+  display: flex;
+  height: 95vh;
+  width: 100vw;
+  background-image: url("../img/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0; }
+
+section .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  section .home img {
+    width: 250px;
+    margin-bottom: 2em; }
+  section .home p {
+    font-family: "Abel", sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center; }
+
+section .about {
+  width: 100vw;
+  height: 60vh;
+  margin: 3em;
+  font-family: "Abel", sans-serif;
+  color: #313030;
+  background-color: white; }
+  section .about h1 {
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: left; }
+  section .about p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-right: 3em;
+    font-family: "Roboto", sans-serif; }
+
+section .about2 {
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/about.jpg"); }
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 6em;
+  background-color: #313030;
+  justify-content: center;
+  align-items: center;
+  color: #1aa99f;
+  font-family: "Abel", sans-serif; }
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #313030; }
+
+ul.topnav li {
+  float: left; }
+
+ul.topnav li a {
+  display: inline-block;
+  color: #1aa99f;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px; }
+
+ul.topnav li a:hover {
+  background-color: #555; }
+
+ul.topnav li.icon {
+  display: none; }
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:first-child) {
+    display: none; }
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block; } }
+@media screen and (max-width: 680px) {
+  ul.topnav.responsive {
+    position: relative; }
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left; } }
+
+/*# sourceMappingURL=application.css.map */

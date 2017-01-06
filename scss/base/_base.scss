@@ -1,0 +1,67 @@
+body {
+  margin:0;
+}
+
+// hero screen
+
+.home {
+  display: flex;
+  height: 95vh;
+  width: 100vw;
+  background-image: url("../img/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+section .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      img {
+        width: 250px;
+        margin-bottom: 2em;
+      }
+      p {
+        font-family: $main-font;
+        font-size: 3em;
+        color: white;
+        text-align: center;
+      }
+  }
+
+  // about
+
+  section .about {
+  // display: flex;
+  width: 100vw;
+  height: 60vh;
+  margin: 3em;
+  font-family: $main-font;
+  color: $jiva-gray;
+  background-color: white;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+    h1 {
+      font-size: 2em;
+      text-decoration: underline;
+      text-align: left;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-right: 3em;
+      font-family: $copy-font;
+    }
+}
+
+section .about2 {
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/about.jpg');
+}
