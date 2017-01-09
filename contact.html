@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/application.css">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
 
-    <title>Jiva VR</title>
-  </head>
-  <body>
+  <title>Jiva VR</title>
+</head>
+<body>
 
-  </body>
+  <!-- Navbar-->
+
+  <header>
+
+    <ul class="topnav" id="myTopnav">
+      <li><a class="active" href="index.html"><img src="img/nav-logo.png" width=35px alt=""></a></li>
+      <li><a href="tech.html">Tech</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+      </li>
+    </ul>
+
+  </header>
+
+  <!-- form -->
+
+  <section id="contact">
+
+  <div class="contact">
+    <form id="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Name:<br>
+      <input id="contact-name" type="text" name="name"><br>
+      E-mail:<br>
+      <input id="contact-email" type="text" name="mail"><br>
+      Message:<br>
+      <input id="contact-message" type="text" name="message"><br><br>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+  </section>
+
+  <!-- footer -->
+
+  <div class="footer">
+    <p>©2016 Jiva VR Inc.</p>
+  </div>
+
+</body>
 </html>

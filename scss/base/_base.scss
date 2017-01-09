@@ -90,8 +90,23 @@ section .about2 {
     color: $jiva-blue;
     text-align: center;
     padding: 1em 0;
-    p {
-      color: $jiva-gray;
-    }
   }
+}
+
+.team-card p {
+  color: $jiva-gray;
+  text-align: justify;
+  font-family: $copy-font;
+}
+
+// contact
+
+#contact {
+  height: 100vh;
+  width: auto;
+}
+
+.contact {
+  font-family: $main-font;
+  color: $jiva-gray;
 }
