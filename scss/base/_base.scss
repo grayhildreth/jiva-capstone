@@ -107,6 +107,35 @@ section .about2 {
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
   font-family: $main-font;
   color: $jiva-gray;
+  input[type="text"] {
+    align-items: center;
+    background-color: #fff;
+    color: $jiva-gray;
+    width: 50%;
+  }
+}
+
+// work
+
+.project1 {
+  display: flex;
+  height: 46vh;
+  width: 100vw;
+  background-image: url("../img/project1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.project2 {
+  display: flex;
+  height: 46vh;
+  width: 100vw;
+  background-image: url("../img/project2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
 }

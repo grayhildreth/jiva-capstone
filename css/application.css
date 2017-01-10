@@ -85,8 +85,33 @@ section .about2 {
   width: auto; }
 
 .contact {
+  display: flex;
+  justify-content: center;
   font-family: "Abel", sans-serif;
   color: #313030; }
+  .contact input[type="text"] {
+    align-items: center;
+    background-color: #fff;
+    color: #313030;
+    width: 50%; }
+
+.project1 {
+  display: flex;
+  height: 46vh;
+  width: 100vw;
+  background-image: url("../img/project1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0; }
+
+.project2 {
+  display: flex;
+  height: 46vh;
+  width: 100vw;
+  background-image: url("../img/project2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0; }
 
 .footer {
   display: flex;
