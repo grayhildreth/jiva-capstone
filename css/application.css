@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   margin: 0; }
 
@@ -95,23 +102,23 @@ section .about2 {
     color: #313030;
     width: 50%; }
 
-.project1 {
+.work {
   display: flex;
-  height: 46vh;
-  width: 100vw;
-  background-image: url("../img/project1.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0; }
+  flex-direction: column; }
 
-.project2 {
-  display: flex;
-  height: 46vh;
+.photo1 {
+  background-image: url("../img/project1.jpg");
   width: 100vw;
-  background-image: url("../img/project2.jpg");
+  height: 50vh;
   background-size: cover;
-  background-position: center;
-  margin: 0; }
+  background-position: center; }
+
+.photo2 {
+  background-image: url("../img/project2.jpg");
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center; }
 
 .footer {
   display: flex;
