@@ -106,19 +106,39 @@ section .about2 {
   display: flex;
   flex-direction: column; }
 
+p.project-description {
+  align-items: center;
+  justify-content: center; }
+
 .photo1 {
+  display: flex;
   background-image: url("../img/project1.jpg");
   width: 100vw;
   height: 50vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  justify-content: center;
+  align-items: center; }
+  .photo1 p {
+    color: white;
+    font-family: "Abel", sans-serif; }
 
 .photo2 {
+  display: flex;
   background-image: url("../img/project2.jpg");
   width: 100vw;
   height: 50vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  justify-content: center;
+  align-items: center; }
+  .photo2 p {
+    color: white;
+    font-family: "Abel", sans-serif; }
+
+.project-description {
+  justify-content: center;
+  align-items: center; }
 
 .footer {
   display: flex;

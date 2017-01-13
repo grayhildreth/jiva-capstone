@@ -134,6 +134,11 @@ section .about2 {
   flex-direction: column;
 }
 
+p.project-description {
+  align-items: center;
+  justify-content: center;
+}
+
 // .photo1 {
 //   display: flex;
 //   background-image: url('../img/project1.jpg');
@@ -144,17 +149,36 @@ section .about2 {
 //   margin: 0;
 // }
 .photo1 {
+  display: flex;
   background-image: url('../img/project1.jpg');
   width: 100vw;
   height: 50vh;
   background-size: cover;
   background-position: center;;
+  justify-content: center;
+  align-items: center;
+    p {
+      color: white;
+      font-family: $main-font;
+    }
 }
 
 .photo2 {
+  display: flex;
   background-image: url('../img/project2.jpg');
   width: 100vw;
   height: 50vh;
   background-size: cover;
-  background-position: center;;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+    p {
+      color: white;
+      font-family: $main-font;
+    }
+}
+
+.project-description {
+  justify-content: center;
+  align-items: center;
 }
