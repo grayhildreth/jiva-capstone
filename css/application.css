@@ -106,10 +106,6 @@ section .about2 {
   display: flex;
   flex-direction: column; }
 
-p.project-description {
-  align-items: center;
-  justify-content: center; }
-
 .photo1 {
   display: flex;
   background-image: url("../img/project1.jpg");
@@ -119,9 +115,6 @@ p.project-description {
   background-position: center;
   justify-content: center;
   align-items: center; }
-  .photo1 p {
-    color: white;
-    font-family: "Abel", sans-serif; }
 
 .photo2 {
   display: flex;
@@ -132,23 +125,43 @@ p.project-description {
   background-position: center;
   justify-content: center;
   align-items: center; }
-  .photo2 p {
-    color: white;
-    font-family: "Abel", sans-serif; }
 
-.project-description {
+.overlay {
+  display: flex;
+  display: none;
+  background: rgba(0, 0, 0, 0.75);
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  .overlay p {
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-size: 2em; }
+
+.photo1:hover .overlay {
+  display: flex; }
+
+.photo2:hover .overlay {
+  display: flex; }
 
 .footer {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 6em;
+  height: 12em;
   background-color: #313030;
   justify-content: center;
   align-items: center;
   color: #1aa99f;
   font-family: "Abel", sans-serif; }
+  .footer p {
+    margin: 1em; }
+
+.social ul {
+  display: flex; }
+  .social ul li {
+    margin: 1em; }
 
 ul.topnav {
   list-style-type: none;
