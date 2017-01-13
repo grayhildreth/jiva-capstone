@@ -166,13 +166,14 @@ section .about2 {
 }
 
 .overlay {
-  display: flex;
-  display:none;
+  transition: all 1s ease-in-out;
+  display:flex;
   background: rgba(0, 0, 0, .75);
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  opacity: 0;
   p {
     color: white;
     font-family: $main-font;
@@ -181,9 +182,11 @@ section .about2 {
 }
 
 .photo1:hover .overlay {
-  display: flex;
+  opacity:1;
+  transition: opacity .5s ease-in-out;
 }
 
 .photo2:hover .overlay {
-  display: flex;
+  opacity:1;
+  transition: opacity .5s ease-in-out;
 }
