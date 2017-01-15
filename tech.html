@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/application.css">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
 
-    <title>Jiva VR</title>
-  </head>
-  <body>
+  <title>Jiva VR</title>
+</head>
+<body>
+
+  <!-- Navbar-->
+
+  <header>
+
+    <ul class="topnav" id="myTopnav">
+      <li><a class="active" href="index.html"><img src="img/nav-logo.png" width=35px alt=""></a></li>
+      <li><a href="tech.html">Tech</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+      </li>
+    </ul>
+
+  </header>
+
+  <!-- carousel -->
+
+  <div class="carousel" data-flickity>
+    <div class="carousel-cell"><img src="img/project1.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="img/project1.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="img/project1.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="img/project1.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="img/project1.jpg" alt=""></div>
+  </div>
+
+  <div class="tech-detail">
+
+  </div>
 
 
     <!-- footer -->

@@ -152,6 +152,7 @@ section .about2 {
   background-position: center;;
   justify-content: center;
   align-items: center;
+  margin: 1em 0em .5em 0em;
 }
 
 .photo2 {
@@ -163,6 +164,7 @@ section .about2 {
   background-position: center;
   justify-content: center;
   align-items: center;
+  margin: .5em 0em 1em;
 }
 
 .overlay {
@@ -189,4 +191,17 @@ section .about2 {
 .photo2:hover .overlay {
   opacity:1;
   transition: opacity .5s ease-in-out;
+}
+
+// tech
+
+.carousel-cell {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.tech-detail {
+  height: 60vh;
+  width: 100vw;
 }

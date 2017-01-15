@@ -114,7 +114,8 @@ section .about2 {
   background-size: cover;
   background-position: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 1em 0em .5em 0em; }
 
 .photo2 {
   display: flex;
@@ -124,7 +125,8 @@ section .about2 {
   background-size: cover;
   background-position: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: .5em 0em 1em; }
 
 .overlay {
   transition: all 1s ease-in-out;
@@ -147,6 +149,15 @@ section .about2 {
 .photo2:hover .overlay {
   opacity: 1;
   transition: opacity .5s ease-in-out; }
+
+.carousel-cell {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px; }
+
+.tech-detail {
+  height: 60vh;
+  width: 100vw; }
 
 .footer {
   display: flex;
