@@ -44,7 +44,6 @@ section .home {
   section .about {
   display: flex;
   width: 100vw;
-  height: 60vh;
   margin: 3em;
   font-family: $main-font;
   background-color: white;
@@ -78,10 +77,25 @@ section .about2 {
 section .services {
   display: flex;
   width: 100vw;
-  height: 60vh;
   margin: 3em;
+  flex-direction: column;
+  h1 {
+    font-family: $main-font;
+    font-size: 2em;
+    text-align: left;
+  }
+  p {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin-right: 3em;
+    font-family: $main-font;
+    color: $copy-color;
+  }
 }
 
+.service-icon {
+  margin-bottom: 2em;
+}
 
 // team page
 
@@ -90,9 +104,9 @@ section .services {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  // height: 80vh;
   width: auto;
-  padding: 0 2em;
+  padding: 3em 2em;
   font-family: $main-font;
   .jay-photo img {
     width: 300px;
@@ -111,9 +125,16 @@ section .services {
 }
 
 .team-card p {
-  color: $jiva-gray;
+  color: $copy-color;
   text-align: justify;
-  font-family: $copy-font;
+  font-family: $main-font;
+}
+
+.team-content ul {
+  display: flex;
+  li {
+    padding: 1em 1em 0 0;
+  }
 }
 
 // contact

@@ -36,7 +36,6 @@ section .home {
 section .about {
   display: flex;
   width: 100vw;
-  height: 60vh;
   margin: 3em;
   font-family: "Abel", sans-serif;
   background-color: white;
@@ -63,17 +62,29 @@ section .about2 {
 section .services {
   display: flex;
   width: 100vw;
-  height: 60vh;
-  margin: 3em; }
+  margin: 3em;
+  flex-direction: column; }
+  section .services h1 {
+    font-family: "Abel", sans-serif;
+    font-size: 2em;
+    text-align: left; }
+  section .services p {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin-right: 3em;
+    font-family: "Abel", sans-serif;
+    color: #404040; }
+
+.service-icon {
+  margin-bottom: 2em; }
 
 .team-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   width: auto;
-  padding: 0 2em;
+  padding: 3em 2em;
   font-family: "Abel", sans-serif; }
   .team-card .jay-photo img {
     width: 300px;
@@ -88,9 +99,14 @@ section .services {
     padding: 1em 0; }
 
 .team-card p {
-  color: #313030;
+  color: #404040;
   text-align: justify;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Abel", sans-serif; }
+
+.team-content ul {
+  display: flex; }
+  .team-content ul li {
+    padding: 1em 1em 0 0; }
 
 #contact {
   height: 100vh;
