@@ -47,32 +47,41 @@ section .home {
   height: 60vh;
   margin: 3em;
   font-family: $main-font;
-  color: $jiva-gray;
   background-color: white;
   justify-content: center;
   // align-items: center;
   flex-direction: column;
     h1 {
       font-size: 2em;
-      text-decoration: underline;
       text-align: left;
     }
     p {
       font-size: 1.35em;
       line-height: 1.5em;
       margin-right: 3em;
-      font-family: $copy-font;
+      font-family: $main-font;
+      color: $copy-color;
     }
 }
 
 section .about2 {
   display: flex;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   background-image: url('../img/about.jpg');
 }
+
+// services
+
+section .services {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  margin: 3em;
+}
+
 
 // team page
 

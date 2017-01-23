@@ -39,27 +39,32 @@ section .about {
   height: 60vh;
   margin: 3em;
   font-family: "Abel", sans-serif;
-  color: #313030;
   background-color: white;
   justify-content: center;
   flex-direction: column; }
   section .about h1 {
     font-size: 2em;
-    text-decoration: underline;
     text-align: left; }
   section .about p {
     font-size: 1.35em;
     line-height: 1.5em;
     margin-right: 3em;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Abel", sans-serif;
+    color: #404040; }
 
 section .about2 {
   display: flex;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   background-image: url("../img/about.jpg"); }
+
+section .services {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  margin: 3em; }
 
 .team-card {
   display: flex;
@@ -164,7 +169,7 @@ section .about2 {
   flex-direction: column;
   width: 100%;
   height: 12em;
-  background-color: #313030;
+  background-color: #F3F3F3;
   justify-content: center;
   align-items: center;
   color: #1aa99f;
