@@ -35,7 +35,6 @@ section .home {
 
 section .about {
   display: flex;
-  width: 100vw;
   margin: 3em;
   font-family: "Abel", sans-serif;
   background-color: white;
@@ -47,7 +46,6 @@ section .about {
   section .about p {
     font-size: 1.35em;
     line-height: 1.5em;
-    margin-right: 3em;
     font-family: "Abel", sans-serif;
     color: #404040; }
 
@@ -62,7 +60,6 @@ section .about2 {
 section .services {
   display: flex;
   width: 100vw;
-  margin: 3em;
   flex-direction: column; }
   section .services h1 {
     font-family: "Abel", sans-serif;
@@ -71,12 +68,18 @@ section .services {
   section .services p {
     font-size: 1.35em;
     line-height: 1.5em;
-    margin-right: 3em;
     font-family: "Abel", sans-serif;
     color: #404040; }
 
 .service-icon {
-  margin-bottom: 2em; }
+  display: flex;
+  margin-bottom: 2em;
+  flex-direction: column;
+  align-items: center; }
+  .service-icon img {
+    align-self: center;
+    justify-content: center;
+    margin: 1em 0; }
 
 .team-card {
   display: flex;
