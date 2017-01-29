@@ -47,7 +47,8 @@ section .about {
     font-size: 1.35em;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
-    color: #404040; }
+    color: #404040;
+    text-align: justify; }
 
 section .about2 {
   display: flex;
@@ -69,7 +70,8 @@ section .services {
     font-size: 1.35em;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
-    color: #404040; }
+    color: #404040;
+    text-align: justify; }
 
 .service-icon {
   display: flex;
@@ -176,7 +178,7 @@ section .services {
 
 .carousel-cell {
   width: 100%;
-  height: 200px;
+  height: 50vh;
   margin-right: 10px; }
   .carousel-cell img {
     height: auto;
@@ -196,7 +198,8 @@ section .services {
     font-size: 1.35em;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
-    color: #404040; }
+    color: #404040;
+    text-align: justify; }
 
 .footer {
   display: flex;
