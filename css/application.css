@@ -137,7 +137,10 @@ section .contact-info {
     justify-content: center;
     margin: 1em 0; }
   .contact-detail a {
-    color: #313030; }
+    color: #404040;
+    text-decoration: none; }
+    .contact-detail a:hover {
+      color: gray; }
 
 .work {
   display: flex;

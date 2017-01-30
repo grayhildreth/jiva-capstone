@@ -183,7 +183,11 @@ section .contact-info {
     margin: 1em 0;
   }
   a {
-    color: $jiva-gray;
+    color: $copy-color;
+    text-decoration: none;
+    &:hover {
+      color: gray;
+    }
   }
 }
 
