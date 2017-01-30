@@ -80,7 +80,6 @@ section .services {
   // width: 100vw;
   margin: 3em;
   flex-direction: column;
-
   h1 {
     font-family: $main-font;
     font-size: 2em;
@@ -156,21 +155,35 @@ section .services {
 
 // contact
 
-#contact {
-  height: 100vh;
-  width: auto;
+section .contact-info {
+  display: flex;
+  margin: 3em;
+  flex-direction: column;
+  h1 {
+    font-family: $main-font;
+    font-size: 2em;
+    text-align: left;
+  }
+  p {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    font-family: $main-font;
+    color: $copy-color;
+  }
 }
 
-.contact {
+.contact-detail {
   display: flex;
-  justify-content: center;
-  font-family: $main-font;
-  color: $jiva-gray;
-  input[type="text"] {
-    align-items: center;
-    background-color: #fff;
+  margin: 2em 0;
+  flex-direction: column;
+  align-items: center;
+  img {
+    align-self: center;
+    justify-content: center;
+    margin: 1em 0;
+  }
+  a {
     color: $jiva-gray;
-    width: 50%;
   }
 }
 
