@@ -10,6 +10,13 @@ body {
   margin:0;
 }
 
+.page-title h1 {
+  margin: 2em 0 0 3em;
+  text-align: left;
+  font-size: 2em;
+  font-family: $main-font;
+}
+
 // hero screen
 
 .home {
@@ -124,7 +131,7 @@ section .services {
   justify-content: center;
   align-items: center;
   width: auto;
-  padding: 3em 2em;
+  padding: 4em 2em;
   font-family: $main-font;
   .jay-photo img {
     width: 300px;
@@ -146,6 +153,8 @@ section .services {
   color: $copy-color;
   text-align: justify;
   font-family: $main-font;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .team-content ul {

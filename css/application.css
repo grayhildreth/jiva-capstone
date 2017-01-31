@@ -10,6 +10,12 @@
 body {
   margin: 0; }
 
+.page-title h1 {
+  margin: 2em 0 0 3em;
+  text-align: left;
+  font-size: 2em;
+  font-family: "Abel", sans-serif; }
+
 .home {
   display: flex;
   height: 95vh;
@@ -91,7 +97,7 @@ section .services {
   justify-content: center;
   align-items: center;
   width: auto;
-  padding: 3em 2em;
+  padding: 4em 2em;
   font-family: "Abel", sans-serif; }
   .team-card .jay-photo img {
     width: 300px;
@@ -108,7 +114,9 @@ section .services {
 .team-card p {
   color: #404040;
   text-align: justify;
-  font-family: "Abel", sans-serif; }
+  font-family: "Abel", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em; }
 
 .team-content ul {
   display: flex; }
