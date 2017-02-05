@@ -69,7 +69,7 @@ section .home {
       font-family: $main-font;
       color: $copy-color;
       text-align: justify;
-      max-width: 600px;
+      max-width: 800px;
     }
 }
 
@@ -328,4 +328,11 @@ section .contact-info {
       text-align: justify;
       max-width: 800px;
     }
+  }
+
+  .goggles {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
   }
