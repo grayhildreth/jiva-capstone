@@ -8,6 +8,7 @@
 
 body {
   margin:0;
+  height: 100vh;
 }
 
 .page-title h1 {
@@ -52,7 +53,7 @@ section .home {
   display: flex;
   // max-width: 800px;
   // width: 100vw;
-  margin: 3em;
+  margin: 6em 3em;
   font-family: $main-font;
   background-color: white;
   justify-content: center;
@@ -69,7 +70,7 @@ section .home {
       font-family: $main-font;
       color: $copy-color;
       text-align: justify;
-      max-width: 800px;
+      max-width: 700px;
     }
 }
 
@@ -79,7 +80,7 @@ section .about2 {
   height: 40vh;
   background-size: cover;
   background-position: center;
-  background-image: url('../img/about.jpg');
+  background-image: url('../img/about2.jpg');
 }
 
 // services
@@ -87,7 +88,7 @@ section .about2 {
 section .services {
   display: flex;
   // width: 100vw;
-  margin: 3em;
+  margin: 6em 3em;
   flex-direction: column;
   h1 {
     font-family: $main-font;
@@ -101,12 +102,13 @@ section .services {
     font-family: $main-font;
     color: $copy-color;
     text-align: justify;
+    max-width: 700px;
   }
 }
 
 .service-icon {
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   flex-direction: column;
   align-items: center;
   img {
@@ -226,6 +228,13 @@ section .contact-info {
   }
 }
 
+@media screen and (min-width: 641px) {
+  .contact-info {
+    display: flex;
+    // flex-direction:;
+  }
+}
+
 // work
 
 .work {
@@ -266,6 +275,30 @@ section .contact-info {
   margin: .5em 0em 1em;
 }
 
+.photo3 {
+  display: flex;
+  background-image: url('../img/project3.jpg');
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin: .5em 0em 1em;
+}
+
+.photo4 {
+  display: flex;
+  background-image: url('../img/project4.jpg');
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin: .5em 0em 1em;
+}
+
 .overlay {
   transition: all 1s ease-in-out;
   display:flex;
@@ -291,6 +324,42 @@ section .contact-info {
   opacity:1;
   transition: opacity .5s ease-in-out;
 }
+.photo3:hover .overlay {
+  opacity:1;
+  transition: opacity .5s ease-in-out;
+}
+.photo4:hover .overlay {
+  opacity:1;
+  transition: opacity .5s ease-in-out;
+}
+
+@media screen and (min-width: 641px) {
+  .work {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .photo1 {
+    width: 40vw;
+    height: 40vh;
+    margin: 5vh 5vw;
+  }
+  .photo2 {
+    width: 40vw;
+    height: 40vh;
+    margin: 5vh 5vw;
+  }
+  .photo3 {
+    width: 40vw;
+    height: 40vh;
+    margin: 5vh 5vw;
+  }
+  .photo4 {
+    width: 40vw;
+    height: 40vh;
+    margin: 5vh 5vw;
+  }
+}
 
 // tech
 
@@ -299,21 +368,24 @@ section .contact-info {
 .carousel-cell {
   width: 100%;
   height: 50vh;
-  margin-right: 10px;
+  // margin-right: 10px;
   img {
     height: auto;
     width: 100vw;
-  }
+    background-position: center;
+    }
 }
 
 .tech-detail {
   display: flex;
-  margin: 3em;
+  margin: 5em 3em;
   font-family: $main-font;
   background-color: white;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
     h1 {
+      // text-align: left;
       font-size: 2em;
       text-align: left;
     }
@@ -323,5 +395,42 @@ section .contact-info {
       font-family: $main-font;
       color: $copy-color;
       text-align: justify;
+      max-width: 700px;
     }
   }
+
+  .goggles {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 6em;
+      img {
+        width: 300px;
+      }
+  }
+
+@media screen and (min-width: 641px) {
+  .carousel-cell {
+    width: 100%;
+    height: 80vh;
+    // margin-right: 10px;
+    // align-items: center;
+    img {
+      height: auto;
+      width: 100vw;
+      background-position: center;
+    }
+  }
+
+  .tech-detail {
+    margin: 8em 3em;
+  }
+
+  .goggles {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+  }
+}
