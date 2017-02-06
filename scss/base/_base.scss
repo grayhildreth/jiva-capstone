@@ -8,6 +8,7 @@
 
 body {
   margin:0;
+  height: 100vh;
 }
 
 .page-title h1 {
@@ -224,6 +225,13 @@ section .contact-info {
     &:hover {
       color: gray;
     }
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .contact-info {
+    display: flex;
+    // flex-direction:;
   }
 }
 

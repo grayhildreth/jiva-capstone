@@ -8,7 +8,8 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  height: 100vh; }
 
 .page-title h1 {
   margin: 2em 0 0 3em;
@@ -169,6 +170,9 @@ section .contact-info {
     .contact-detail a:hover {
       color: gray; }
 
+@media screen and (min-width: 641px) {
+  .contact-info {
+    display: flex; } }
 .work {
   display: flex;
   flex-direction: column; }
