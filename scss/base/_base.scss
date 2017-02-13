@@ -34,8 +34,8 @@ p {
 
 .video-overlay {
     position:absolute;
-    top:50%;
-    left:45%;
+    top:30%;
+    left:28%;
     z-index:1;
 }
 
@@ -49,19 +49,20 @@ p {
   height: auto;
 }
 
-// .hero-logo {
-//   display: flex;
-//   img {
-//     width: 250px;
-//     margin-bottom: 2em;
-//   }
-//   p {
-//     font-family: $main-font;
-//     font-size: 3em;
-//     color: white;
-//     text-align: center;
-//   }
-// }
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-bottom: 2em;
+    align-self: center;
+  }
+  p {
+    font-family: $main-font;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+  }
+}
 
 // section .background-video {
 //     display: flex;
@@ -149,6 +150,7 @@ section .services {
     align-self: center;
     justify-content: center;
     margin: 1em 0;
+    width: 96px;
     // p {
     //   font-size: 1.35em;
     //   line-height: 1.5em;

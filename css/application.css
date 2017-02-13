@@ -29,8 +29,8 @@ p {
 
 .video-overlay {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 30%;
+  left: 28%;
   z-index: 1; }
 
 .background-video {
@@ -40,6 +40,18 @@ p {
   min-height: 100%;
   width: auto;
   height: auto; }
+
+.hero-content {
+  display: flex;
+  flex-direction: column; }
+  .hero-content img {
+    margin-bottom: 2em;
+    align-self: center; }
+  .hero-content p {
+    font-family: "Abel", sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center; }
 
 section .about {
   display: flex;
@@ -91,7 +103,8 @@ section .services {
   .service-icon img {
     align-self: center;
     justify-content: center;
-    margin: 1em 0; }
+    margin: 1em 0;
+    width: 96px; }
 
 .team-card {
   display: flex;
