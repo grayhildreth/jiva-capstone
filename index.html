@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/scripts.js"></script>
 
     <title>Jiva VR</title>
   </head>
@@ -19,20 +18,22 @@
 
 <!-- Navbar-->
 
-    <header>
-
-    <ul class="topnav" id="myTopnav">
-      <li><a class="active" href="index.html"><img src="img/nav-logo.png" width=35px alt=""></a></li>
-      <li><a href="tech.html">TECH</a></li>
-      <li><a href="team.html">TEAM</a></li>
-      <li><a href="work.html">WORK</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-      <li class="icon">
-        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-      </li>
-    </ul>
-
+<div id="nav-background">
+  <div id="nav-container">
+    <header id="nav-header">
+      <a href="index.html" id="nav-logo"><img src="img/nav-logo.png" width=35px alt=""></a>
+      <div id="nav-menu-button">MENU</div>
     </header>
+    <nav>
+      <ul class="nav-ul hide-ul">
+        <li><a class="nav-link" href="tech.html">TECH</a></li>
+        <li><a class="nav-link" href="team.html">TEAM</a></li>
+        <li><a class="nav-link" href="work.html">WORK</a></li>
+        <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
   <!-- hero -->
 
@@ -44,7 +45,7 @@
         <div class="video-overlay">
           <div class="hero-content">
             <img src="img/hero-logo.png" width=250px alt="">
-            <p>VIRTUAL REALITY ON DEMAND</p>
+            <p>VIRTUAL REALITY DIRECT MARKETING</p>
            </div>
         </div>
       </div>
@@ -118,6 +119,7 @@
       <p>©2017 Jiva VR Inc.</p>
     </div>
 
+    <script src="js/scripts.js"></script>
     <script src="js/jquery.youtubebackground.js"></script>
   <script>
     jQuery(function($) {
