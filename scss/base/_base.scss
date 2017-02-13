@@ -25,11 +25,14 @@ p {
 // hero screen
 .video-home {
   position:relative;
+  overflow: hidden;
+  width: auto;
 }
 
 .video-home .background-video {
   position:relative;
   z-index:0;
+
 }
 
 .video-overlay {
@@ -40,7 +43,6 @@ p {
 }
 
 .background-video {
-  // position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -52,6 +54,8 @@ p {
 .hero-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   img {
     margin-bottom: 2em;
     align-self: center;
