@@ -30,7 +30,7 @@ p {
 .video-overlay {
   position: absolute;
   top: 30%;
-  left: 28%;
+  left: 16%;
   z-index: 1; }
 
 .background-video {
@@ -51,7 +51,8 @@ p {
     font-family: "Abel", sans-serif;
     font-size: 3em;
     color: white;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 10px; }
 
 section .about {
   display: flex;
