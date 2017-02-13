@@ -11,40 +11,40 @@ body {
   margin: 0;
   height: 100vh; }
 
+p {
+  font-family: "Abel", sans-serif; }
+
 .page-title h1 {
   margin: 2em 0 0 3em;
   text-align: left;
   font-size: 2em;
   font-family: "Abel", sans-serif; }
 
-.home {
-  display: flex;
-  height: 95vh;
-  width: 100vw;
-  background-image: url("../img/main-background.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0; }
+.video-home {
+  position: relative; }
 
-section .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  section .home img {
-    width: 250px;
-    margin-bottom: 2em; }
-  section .home p {
-    font-family: "Abel", sans-serif;
-    font-size: 3em;
-    color: white;
-    text-align: center; }
+.video-home .background-video {
+  position: relative;
+  z-index: 0; }
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  z-index: 1; }
+
+.background-video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; }
 
 section .about {
   display: flex;
   margin: 6em 3em;
   font-family: "Abel", sans-serif;
-  background-color: white;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
@@ -52,12 +52,12 @@ section .about {
     font-size: 2em;
     text-align: left; }
   section .about p {
-    font-size: 1.35em;
+    font-size: 18px;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
     color: black;
     text-align: justify;
-    max-width: 700px; }
+    max-width: 600px; }
 
 section .about2 {
   display: flex;
@@ -76,16 +76,16 @@ section .services {
     font-size: 2em;
     text-align: left; }
   section .services p {
-    font-size: 1.35em;
+    font-size: 18px;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
     color: black;
     text-align: justify;
-    max-width: 700px; }
+    max-width: 600px; }
 
 .service-icon {
   display: flex;
-  margin-bottom: 4em;
+  margin-bottom: 5em;
   flex-direction: column;
   align-items: center; }
   .service-icon img {
@@ -117,7 +117,7 @@ section .services {
   color: black;
   text-align: justify;
   font-family: "Abel", sans-serif;
-  font-size: 1em;
+  font-size: 18px;
   line-height: 1.5em; }
 
 .team-content ul {
@@ -135,7 +135,7 @@ section .services {
       align-self: flex-end; }
 
   .team-content p {
-    font-size: 1em;
+    font-size: 18px;
     line-height: 1.5em;
     max-width: 500px; }
 
@@ -150,7 +150,7 @@ section .contact-info {
     font-size: 2em;
     text-align: left; }
   section .contact-info p {
-    font-size: 1.35em;
+    font-size: 18px;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
     color: black; }
