@@ -23,33 +23,63 @@ p {
 }
 
 // hero screen
-
-.home {
-  display: flex;
-  height: 95vh;
-  width: 100vw;
-  background-image: url("../img/main-background.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0;
+.video-home {
+  position:relative;
 }
 
-section .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-      img {
-        width: 250px;
-        margin-bottom: 2em;
-      }
-      p {
-        font-family: $main-font;
-        font-size: 3em;
-        color: white;
-        text-align: center;
-      }
-  }
+.video-home .background-video {
+  position:relative;
+  z-index:0;
+}
+
+.video-overlay {
+    position:absolute;
+    top:50%;
+    left:45%;
+    z-index:1;
+}
+
+.background-video {
+  // position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+// .hero-logo {
+//   display: flex;
+//   img {
+//     width: 250px;
+//     margin-bottom: 2em;
+//   }
+//   p {
+//     font-family: $main-font;
+//     font-size: 3em;
+//     color: white;
+//     text-align: center;
+//   }
+// }
+
+// section .background-video {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     z-index: -1;
+//       img {
+//         width: 250px;
+//         margin-bottom: 2em;
+//       }
+//       p {
+//         font-family: $main-font;
+//         font-size: 3em;
+//         color: white;
+//         text-align: center;
+//       }
+//   }
 
   // about
 

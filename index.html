@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/application.css">
-    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/reset.css">
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -39,13 +38,14 @@
 
     <section id='home'>
 
-    <div class="home">
-      <div class="hero-logo">
-        <img src="img/hero-logo.png" width=200px alt="">
-      <div class="line"></div>
+      <div class="video-home">
+        <div id="background-video" class="background-video">
+        </div>
+        <div class="video-overlay">
+
+           <p>JIVA</p>
+        </div>
       </div>
-        <p>VIRTUAL REALITY ON DEMAND</p>
-    </div>
 
     </section>
 
@@ -115,6 +115,52 @@
       </div>
       <p>©2017 Jiva VR Inc.</p>
     </div>
+
+    <script src="js/jquery.youtubebackground.js"></script>
+  <script>
+    jQuery(function($) {
+
+      $('#module-video').YTPlayer({
+        fitToBackground: false,
+        videoId: 'NyXoSRKvbBo',
+        pauseOnScroll: false,
+        playerVars: {
+          modestbranding: 0,
+          autoplay: 1,
+          controls: 1,
+          showinfo: 0,
+          branding: 0,
+          rel: 0,
+          autohide: 0
+        }
+      });
+
+      $('#background-video').YTPlayer({
+        fitToBackground: true,
+        videoId: 'NyXoSRKvbBo',
+        pauseOnScroll: true,
+        callback: function() {
+          videoCallbackEvents();
+        }
+      });
+
+      var videoCallbackEvents = function() {
+        var player = $('#background-video').data('ytPlayer').player;
+
+        player.addEventListener('onStateChange', function(event){
+            console.log("Player State Change", event);
+
+            // OnStateChange Data
+            if (event.data === 0) {
+                console.log('video ended');
+            }
+            else if (event.data === 2) {
+              console.log('paused');
+            }
+        });
+      }
+    });
+  </script>
 
   </body>
 </html>

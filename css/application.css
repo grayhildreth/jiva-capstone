@@ -20,28 +20,26 @@ p {
   font-size: 2em;
   font-family: "Abel", sans-serif; }
 
-.home {
-  display: flex;
-  height: 95vh;
-  width: 100vw;
-  background-image: url("../img/main-background.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0; }
+.video-home {
+  position: relative; }
 
-section .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  section .home img {
-    width: 250px;
-    margin-bottom: 2em; }
-  section .home p {
-    font-family: "Abel", sans-serif;
-    font-size: 3em;
-    color: white;
-    text-align: center; }
+.video-home .background-video {
+  position: relative;
+  z-index: 0; }
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  z-index: 1; }
+
+.background-video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; }
 
 section .about {
   display: flex;
