@@ -241,51 +241,20 @@ section .contact-info {
     margin: 4em; } }
 .work {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .photo1 {
   display: flex;
   background-image: url("../img/project1.jpg");
-  width: 100vw;
-  height: 50vh;
+  width: 90vw;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
-  margin: 1em 0em .5em 0em; }
-
-.photo2 {
-  display: flex;
-  background-image: url("../img/project2.jpg");
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  margin: .5em 0em 1em; }
-
-.photo3 {
-  display: flex;
-  background-image: url("../img/project3.jpg");
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  margin: .5em 0em 1em; }
-
-.photo4 {
-  display: flex;
-  background-image: url("../img/project4.jpg");
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  margin: .5em 0em 1em; }
+  margin: 3em 0 5em; }
 
 .overlay {
   transition: all 1s ease-in-out;
@@ -305,15 +274,7 @@ section .contact-info {
   opacity: 1;
   transition: opacity .5s ease-in-out; }
 
-.photo2:hover .overlay {
-  opacity: 1;
-  transition: opacity .5s ease-in-out; }
-
-.photo3:hover .overlay {
-  opacity: 1;
-  transition: opacity .5s ease-in-out; }
-
-.photo4:hover .overlay {
+.photo1:active .overlay {
   opacity: 1;
   transition: opacity .5s ease-in-out; }
 
@@ -324,24 +285,9 @@ section .contact-info {
     flex-wrap: wrap; }
 
   .photo1 {
-    width: 40vw;
-    height: 40vh;
-    margin: 5vh 5vw; }
-
-  .photo2 {
-    width: 40vw;
-    height: 40vh;
-    margin: 5vh 5vw; }
-
-  .photo3 {
-    width: 40vw;
-    height: 40vh;
-    margin: 5vh 5vw; }
-
-  .photo4 {
-    width: 40vw;
-    height: 40vh;
-    margin: 5vh 5vw; } }
+    width: 60vw;
+    height: 50vh;
+    margin: 4em 0 8em 0; } }
 .carousel-cell {
   width: 100%;
   height: 50vh; }
@@ -481,7 +427,7 @@ body {
   -webkit-flex: 1;
   -ms-flex: 1;
   /*flex: 1;*/
-  margin-left: 2em;
+  margin-left: 1.5em;
   color: #1aa99f;
   text-decoration: none;
   font-size: 16px;
