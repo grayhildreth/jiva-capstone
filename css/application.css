@@ -20,44 +20,73 @@ p {
   font-size: 2em;
   font-family: "Abel", sans-serif; }
 
-.video-home {
-  position: relative;
-  overflow: hidden;
-  width: auto; }
+@media screen and (max-width: 999px) {
+  .video-home {
+    display: none; }
 
-.video-home .background-video {
-  position: relative;
-  z-index: 0; }
+  .home {
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    background-image: url("../img/main-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0; }
 
-.video-overlay {
-  position: absolute;
-  top: 28%;
-  left: 18%;
-  z-index: 1; }
+  section .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    section .home img {
+      width: 250px;
+      margin-bottom: 2em; }
+    section .home p {
+      font-family: "Abel", sans-serif;
+      font-size: 3em;
+      color: white;
+      text-align: center; } }
+@media screen and (min-width: 1000px) {
+  .home {
+    display: none; }
 
-.background-video {
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto; }
+  .video-home {
+    position: relative;
+    overflow: hidden;
+    width: auto; }
 
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .hero-content img {
-    margin-bottom: 2em;
-    align-self: center; }
-  .hero-content p {
-    font-family: "Abel", sans-serif;
-    font-size: 2.2em;
-    color: white;
-    text-align: center;
-    letter-spacing: 10px; }
+  .video-home .background-video {
+    position: relative;
+    z-index: 0; }
 
+  .video-overlay {
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    z-index: 1; }
+
+  .background-video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .hero-content img {
+      margin-bottom: 2em;
+      align-self: center; }
+    .hero-content p {
+      font-family: "Abel", sans-serif;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px; } }
 section .about {
   display: flex;
   margin: 6em 3em;
