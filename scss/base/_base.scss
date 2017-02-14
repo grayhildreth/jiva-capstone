@@ -320,9 +320,22 @@ section .contact-info {
 }
 
 @media screen and (min-width: 641px) {
-  .contact-info {
+  section .contact-info {
     display: flex;
-    // flex-direction:;
+    margin: 3em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line {
+    height: 200px;
+    width: 3px;
+    background-color: $jiva-blue;
+  }
+
+  .contact-detail {
+    margin: 4em;
   }
 }
 

@@ -225,8 +225,20 @@ section .contact-info {
       color: gray; }
 
 @media screen and (min-width: 641px) {
-  .contact-info {
-    display: flex; } }
+  section .contact-info {
+    display: flex;
+    margin: 3em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+  .line {
+    height: 200px;
+    width: 3px;
+    background-color: #1aa99f; }
+
+  .contact-detail {
+    margin: 4em; } }
 .work {
   display: flex;
   flex-direction: column; }
