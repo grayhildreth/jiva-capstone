@@ -13,61 +13,106 @@ body {
 
 p {
   font-family: $main-font;
+  color: $copy-color;
 }
 
 .page-title h1 {
-  margin: 2em 0 0 3em;
-  text-align: left;
+  margin: 2em 0 1em;
+  text-align: center;
   font-size: 2em;
   font-family: $main-font;
+  letter-spacing: 10px;
 }
 
 // hero screen
-.video-home {
-  position:relative;
-  overflow: hidden;
-  width: auto;
-}
 
-.video-home .background-video {
-  position:relative;
-  z-index:0;
-
-}
-
-.video-overlay {
-    position:absolute;
-    top:28%;
-    left:18%;
-    z-index:1;
-}
-
-.background-video {
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.hero-content {
+@media screen and (max-width: 999px) {
+  .video-home {
+    display: none;
+  }
+.home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  img {
-    margin-bottom: 2em;
-    align-self: center;
-  }
-  p {
-    font-family: $main-font;
-    font-size: 2.2em;
-    color: white;
-    text-align: center;
-    letter-spacing: 10px;
+  height: 95vh;
+  width: 100vw;
+  background-image: url("../img/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+section .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      img {
+        width: 250px;
+        margin-bottom: 2em;
+      }
+      p {
+        font-family: $main-font;
+        font-size: 2.2em;
+        color: white;
+        text-align: center;
+        letter-spacing: 10px;
+      }
   }
 }
+
+
+@media screen and (min-width: 1000px) {
+  .home{
+    display: none;
+  }
+  .video-home {
+    position:relative;
+    overflow: hidden;
+    width: auto;
+  }
+
+  .video-home .background-video {
+    position:relative;
+    z-index:0;
+
+  }
+
+  .video-overlay {
+      position:absolute;
+      top:28%;
+      left:18%;
+      z-index:1;
+  }
+
+  .background-video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-bottom: 2em;
+      align-self: center;
+    }
+    p {
+      font-family: $main-font;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px;
+    }
+  }
+}
+
+
+
 
 // section .background-video {
 //     display: flex;
@@ -102,6 +147,8 @@ p {
     h1 {
       font-size: 2em;
       text-align: left;
+      letter-spacing: 10px;
+      margin-bottom: 1em;
     }
     p {
       font-size: 18px;
@@ -123,6 +170,7 @@ section .about2 {
   background-image: url('../img/about2.jpg');
 }
 
+
 // services
 
 section .services {
@@ -133,7 +181,8 @@ section .services {
   h1 {
     font-family: $main-font;
     font-size: 2em;
-    text-align: left;
+    text-align: center;
+    letter-spacing: 10px;
   }
   p {
     font-size: 18px;
@@ -148,7 +197,7 @@ section .services {
 
 .service-icon {
   display: flex;
-  margin-bottom: 5em;
+  margin-top: 5em;
   flex-direction: column;
   align-items: center;
   img {
@@ -240,7 +289,8 @@ section .contact-info {
   h1 {
     font-family: $main-font;
     font-size: 2em;
-    text-align: left;
+    text-align: center;
+    letter-spacing: 10px;
   }
   p {
     font-size: 18px;
@@ -270,9 +320,22 @@ section .contact-info {
 }
 
 @media screen and (min-width: 641px) {
-  .contact-info {
+  section .contact-info {
     display: flex;
-    // flex-direction:;
+    margin: 3em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line {
+    height: 200px;
+    width: 3px;
+    background-color: $jiva-blue;
+  }
+
+  .contact-detail {
+    margin: 4em;
   }
 }
 
@@ -430,6 +493,8 @@ section .contact-info {
       // text-align: left;
       font-size: 2em;
       text-align: left;
+      letter-spacing: 10px;
+      margin-bottom: 1em;
     }
     p {
       font-size: 1.35em;
@@ -455,7 +520,7 @@ section .contact-info {
 @media screen and (min-width: 641px) {
   .carousel-cell {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     // margin-right: 10px;
     // align-items: center;
     img {

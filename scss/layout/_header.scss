@@ -76,6 +76,8 @@ body {
   margin-left: 2em;
   color: $jiva-blue;
   text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 
 /* END NAVIGATION */
@@ -118,7 +120,7 @@ body {
   .nav-link {
     padding: 1rem 0;
     font-size: 1.3rem;
-    border-bottom: 1px solid #f4f4f4;
+    // border-bottom: 1px solid $jiva-blue;
   }
 }
 /* END MOBILE MENU */
