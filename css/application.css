@@ -274,6 +274,10 @@ section .contact-info {
   opacity: 1;
   transition: opacity .5s ease-in-out; }
 
+.photo1:active .overlay {
+  opacity: 1;
+  transition: opacity .5s ease-in-out; }
+
 @media screen and (min-width: 641px) {
   .work {
     flex-direction: row;

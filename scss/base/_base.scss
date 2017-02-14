@@ -425,6 +425,10 @@ section .contact-info {
   opacity:1;
   transition: opacity .5s ease-in-out;
 }
+.photo1:active .overlay {
+  opacity:1;
+  transition: opacity .5s ease-in-out;
+}
 //
 // .photo2:hover .overlay {
 //   opacity:1;
