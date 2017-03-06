@@ -109,13 +109,9 @@ section .about {
     text-align: justify;
     max-width: 600px; }
 
-section .about2 {
-  display: flex;
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("../img/headsets_02.jpg"); }
+.about2 img {
+  max-width: 100%;
+  max-height: auto; }
 
 section .services {
   display: flex;

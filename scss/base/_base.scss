@@ -170,13 +170,15 @@ section .home {
     }
 }
 
-section .about2 {
-  display: flex;
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: bottom;;
-  background-image: url('../img/headsets_02.jpg');
+.about2 img {
+  // display: flex;
+  // width: 100vw;
+  // height: 50vh;
+  // background-size: cover;
+  // background-position: bottom;;
+  // background-image: url('../img/headsets_02.jpg');
+  max-width: 100%;
+  max-height: auto;
 }
 
 
