@@ -166,8 +166,8 @@ section .about2 {
   width: 100vw;
   height: 50vh;
   background-size: cover;
-  background-position: center;
-  background-image: url('../img/about2.jpg');
+  background-position: bottom;;
+  background-image: url('../img/headsets_02.jpg');
 }
 
 
@@ -503,7 +503,7 @@ section .contact-info {
       margin-bottom: 1em;
     }
     p {
-      font-size: 1.35em;
+      font-size: 18px;
       line-height: 1.5em;
       font-family: $main-font;
       color: $copy-color;
