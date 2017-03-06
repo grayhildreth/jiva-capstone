@@ -65,31 +65,40 @@ section .home {
     display: none;
   }
   .video-home {
-    position:relative;
-    overflow: hidden;
-    width: auto;
+    display: flex;
+    // position:relative;
+    // overflow: hidden;
+    width: 100vw;
+    height: auto;
   }
 
   .video-home .background-video {
+    width: 100vw;
+    height: auto;
     position:relative;
     z-index:0;
 
   }
 
   .video-overlay {
-      position:absolute;
-      top:28%;
-      left:18%;
-      z-index:1;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // top:28%;
+    // left:18%;
+    z-index:1;
   }
 
   .background-video {
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    // right: 0;
+    // bottom: 0;
+    width: 100vw;
     height: auto;
+    // min-width: 100%;
+    // min-height: 100%;
+    // width: auto;
+    // height: auto;
   }
 
   .hero-content {
