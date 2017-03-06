@@ -54,26 +54,25 @@ p {
     display: none; }
 
   .video-home {
-    position: relative;
-    overflow: hidden;
-    width: auto; }
+    display: flex;
+    width: 100vw;
+    height: auto; }
 
   .video-home .background-video {
+    width: 100vw;
+    height: auto;
     position: relative;
     z-index: 0; }
 
   .video-overlay {
     position: absolute;
-    top: 28%;
-    left: 18%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1; }
 
   .background-video {
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    width: 100vw;
     height: auto; }
 
   .hero-content {
@@ -197,7 +196,9 @@ section .services {
 section .contact-info {
   display: flex;
   margin: 3em;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  height: 60vh; }
   section .contact-info h1 {
     font-family: "Abel", sans-serif;
     font-size: 2em;
