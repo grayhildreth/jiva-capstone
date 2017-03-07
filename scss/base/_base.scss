@@ -155,7 +155,7 @@ section .home {
   flex-direction: column;
     h1 {
       font-size: 2em;
-      text-align: left;
+      text-align: center;
       letter-spacing: 10px;
       margin-bottom: 1em;
     }
@@ -177,7 +177,7 @@ section .home {
   // background-size: cover;
   // background-position: bottom;;
   // background-image: url('../img/headsets_02.jpg');
-  max-width: 100%;
+  max-width: 100vw;
   max-height: auto;
 }
 
