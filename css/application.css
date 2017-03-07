@@ -110,7 +110,7 @@ section .about {
     max-width: 600px; }
 
 .about2 img {
-  max-width: 100%;
+  max-width: 100vw;
   max-height: auto; }
 
 section .services {
