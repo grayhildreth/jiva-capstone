@@ -242,49 +242,49 @@ section .contact-info {
   justify-content: center;
   align-items: center; }
 
-.photo1 {
-  display: flex;
-  background-image: url("../img/project1.jpg");
-  width: 90vw;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  width: 80%;
   margin: 3em 0 5em; }
 
-.overlay {
-  transition: all 1s ease-in-out;
-  display: flex;
-  background: rgba(0, 0, 0, 0.75);
-  justify-content: center;
-  align-items: center;
+.image {
+  display: block;
   width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
-  opacity: 0; }
-  .overlay p {
-    color: white;
-    font-family: "Abel", sans-serif;
-    font-size: 2em; }
+  width: 100%;
+  opacity: 0;
+  transition: .75s ease;
+  background-color: #000; }
 
-.photo1:hover .overlay {
-  opacity: 1;
-  transition: opacity .5s ease-in-out; }
+.container:hover .overlay {
+  opacity: 0.75; }
 
-.photo1:active .overlay {
-  opacity: 1;
-  transition: opacity .5s ease-in-out; }
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 700px) {
   .work {
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
 
-  .photo1 {
-    width: 60vw;
-    height: 50vh;
-    margin: 4em 0 8em 0; } }
+  .container {
+    position: relative;
+    width: 40%;
+    margin: 3em 0 5em; } }
 .carousel-cell {
   width: 100%;
   height: 50vh; }

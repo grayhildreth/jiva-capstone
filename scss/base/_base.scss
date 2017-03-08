@@ -362,117 +362,65 @@ section .contact-info {
   align-items: center;
 }
 
-// .photo1 {
-//   display: flex;
-//   background-image: url('../img/project1.jpg');
-//   height: 100vh;
-//   width: 100vw;
-//   background-size: cover;
-//   background-position: center;
-//   margin: 0;
-// }
-.photo1 {
-  display: flex;
-  background-image: url('../img/project1.jpg');
-  width: 90vw;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  width: 80%;
   margin: 3em 0 5em;
 }
-//
-// .photo2 {
-//   display: flex;
-//   background-image: url('../img/project2.jpg');
-//   width: 100vw;
-//   height: 50vh;
-//   background-size: cover;
-//   background-position: center;
-//   justify-content: center;
-//   align-items: center;
-//   margin: .5em 0em 1em;
-// }
-//
-// .photo3 {
-//   display: flex;
-//   background-image: url('../img/project3.jpg');
-//   width: 100vw;
-//   height: 50vh;
-//   background-size: cover;
-//   background-position: center;
-//   justify-content: center;
-//   align-items: center;
-//   margin: .5em 0em 1em;
-// }
-//
-// .photo4 {
-//   display: flex;
-//   background-image: url('../img/project4.jpg');
-//   width: 100vw;
-//   height: 50vh;
-//   background-size: cover;
-//   background-position: center;
-//   justify-content: center;
-//   align-items: center;
-//   margin: .5em 0em 1em;
-// }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .overlay {
-  transition: all 1s ease-in-out;
-  display:flex;
-  background: rgba(0, 0, 0, .75);
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
+  width: 100%;
   opacity: 0;
-  p {
-    color: white;
-    font-family: $main-font;
-    font-size: 2em;
-  }
+  transition: .75s ease;
+  background-color: #000;
 }
 
-.photo1:hover .overlay {
-  opacity:1;
-  transition: opacity .5s ease-in-out;
+.container:hover .overlay {
+  opacity: 0.75;
 }
-.photo1:active .overlay {
-  opacity:1;
-  transition: opacity .5s ease-in-out;
-}
-//
-// .photo2:hover .overlay {
-//   opacity:1;
-//   transition: opacity .5s ease-in-out;
-// }
-// .photo3:hover .overlay {
-//   opacity:1;
-//   transition: opacity .5s ease-in-out;
-// }
-// .photo4:hover .overlay {
-//   opacity:1;
-//   transition: opacity .5s ease-in-out;
-// }
 
-@media screen and (min-width: 641px) {
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 700px) {
   .work {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    // justify-content: space-around;
+    justify-content: space-around;
   }
-  .photo1 {
-    width: 60vw;
-    height: 50vh;
-    margin: 4em 0 8em 0;
+
+  .container {
+    position: relative;
+    width: 40%;
+    margin: 3em 0 5em;
   }
+  // .photo1 {
+  //   width: 40vw;
+  //   height: 40vh;
+  //   margin: 4em 0 8em 0;
+  // }
   // .photo2 {
   //   width: 40vw;
   //   height: 40vh;
-  //   margin: 5vh 5vw;
+  //   margin: 4em 0 8em 0;
   // }
   // .photo3 {
   //   width: 40vw;
