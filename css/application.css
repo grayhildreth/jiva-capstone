@@ -55,6 +55,8 @@ p {
 
   .video-home {
     display: flex;
+    position: relative;
+    overflow: hidden;
     width: 100vw;
     height: auto; }
 
