@@ -204,6 +204,9 @@ section .services {
     text-align: justify;
     max-width: 600px;
   }
+  .service-title {
+    color: $jiva-blue;
+  }
 }
 
 .service-icon {

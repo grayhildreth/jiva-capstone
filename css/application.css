@@ -131,6 +131,8 @@ section .services {
     color: #404040;
     text-align: justify;
     max-width: 600px; }
+  section .services .service-title {
+    color: #1aa99f; }
 
 .service-icon {
   display: flex;
