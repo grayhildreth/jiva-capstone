@@ -13,24 +13,24 @@
 
 $(document).ready(function(){
   $(".conceptualization").click(function(){
-    $("#conceptualization-copy").toggle(1000);
+    $("#conceptualization-copy").slideToggle(500);
   });
 });
 
 $(document).ready(function(){
   $(".field").click(function(){
-    $("#field-copy").toggle(1000);
+    $("#field-copy").slideToggle(500);
   });
 });
 
 $(document).ready(function(){
   $(".post").click(function(){
-    $("#post-copy").toggle(1000);
+    $("#post-copy").slideToggle(500);
   });
 });
 
 $(document).ready(function(){
   $(".distribution").click(function(){
-    $("#distribution-copy").toggle(1000);
+    $("#distribution-copy").slideToggle(500);
   });
 });
