@@ -16,6 +16,10 @@ p {
   color: $copy-color;
 }
 
+.content {
+  min-height: calc(100vh - 12em);
+}
+
 .page-title h1 {
   margin: 2em 0 1em;
   text-align: center;
@@ -170,15 +174,21 @@ section .home {
     }
 }
 
-.about2 img {
-  // display: flex;
+// .about2 img {
+//   max-width: 100vw;
+//   max-height: auto;
+// }
+section .about2 {
+  display: flex;
   // width: 100vw;
   // height: 50vh;
-  // background-size: cover;
-  // background-position: bottom;;
-  // background-image: url('../img/headsets_02.jpg');
-  max-width: 100vw;
-  max-height: auto;
+  height: 400px;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/about2.jpg');
 }
 
 
@@ -219,6 +229,7 @@ section .services {
     justify-content: center;
     margin: 1em 0;
     width: 96px;
+    cursor: pointer;
     // p {
     //   font-size: 1.35em;
     //   line-height: 1.5em;
@@ -302,7 +313,7 @@ section .contact-info {
   margin: 3em;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
+  // height: 60vh;
   h1 {
     font-family: $main-font;
     font-size: 2em;
