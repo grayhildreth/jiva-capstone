@@ -543,18 +543,24 @@ section .contact-info {
 }
 
 .project-details {
-  margin-top: 3em;
+  margin: 3em 2em 0;
   display: flex;
   font-family: $main-font;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
+  a {
+    color: $copy-color;
+    &:hover {
+      color: gray;
+    }
+  }
   p {
     font-size: 16px;
     line-height: 1.5em;
     font-family: $main-font;
     color: $copy-color;
-    text-align: justify;
+    text-align: left;
     max-width: 600px;
   }
   .detail-color {

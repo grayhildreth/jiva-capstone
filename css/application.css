@@ -365,18 +365,22 @@ section .contact-info {
   justify-content: center; }
 
 .project-details {
-  margin-top: 3em;
+  margin: 3em 2em 0;
   display: flex;
   font-family: "Abel", sans-serif;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column; }
+  .project-details a {
+    color: #404040; }
+    .project-details a:hover {
+      color: gray; }
   .project-details p {
     font-size: 16px;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
     color: #404040;
-    text-align: justify;
+    text-align: left;
     max-width: 600px; }
   .project-details .detail-color {
     color: #1aa99f; }
