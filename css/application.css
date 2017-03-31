@@ -236,8 +236,7 @@ section .contact-info {
     justify-content: center;
     margin: 1em 0; }
   .contact-detail a {
-    color: #404040;
-    text-decoration: none; }
+    color: #404040; }
     .contact-detail a:hover {
       color: gray; }
 
