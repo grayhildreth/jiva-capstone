@@ -155,6 +155,12 @@ section .services {
     width: 96px;
     cursor: pointer; }
 
+@media screen and (min-width: 700px) {
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; } }
 .team-card {
   display: flex;
   flex-direction: column;
@@ -353,6 +359,42 @@ section .contact-info {
     justify-content: center;
     flex-direction: row;
     align-items: center; } }
+.milestone-video {
+  display: flex;
+  justify-content: center; }
+
+.project-details {
+  margin-top: 3em;
+  display: flex;
+  font-family: "Abel", sans-serif;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column; }
+  .project-details p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #404040;
+    text-align: justify;
+    max-width: 600px; }
+  .project-details .detail-color {
+    color: #1aa99f; }
+
+.project-info {
+  margin: 3em 3em 6em;
+  display: flex;
+  font-family: "Abel", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .project-info p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #404040;
+    text-align: justify;
+    max-width: 600px; }
+
 .footer {
   display: flex;
   flex-direction: column;
