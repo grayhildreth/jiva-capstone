@@ -14,6 +14,7 @@ body {
 p {
   font-family: $main-font;
   color: $copy-color;
+  font-size: 16px;
 }
 
 .content {
@@ -164,7 +165,7 @@ section .home {
       margin-bottom: 1em;
     }
     p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.5em;
       // margin-right: 3em;
       font-family: $main-font;
@@ -206,7 +207,7 @@ section .services {
     letter-spacing: 10px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     // margin-right: 3em;
     font-family: $main-font;
@@ -239,6 +240,15 @@ section .services {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+
 // team page
 
 
@@ -270,7 +280,7 @@ section .services {
   color: $copy-color;
   text-align: justify;
   font-family: $main-font;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
 }
 
@@ -295,7 +305,7 @@ section .services {
   }
 
   .team-content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     max-width: 500px;
   }
@@ -321,7 +331,7 @@ section .contact-info {
     letter-spacing: 10px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     font-family: $main-font;
     color: $copy-color;
@@ -479,7 +489,7 @@ section .contact-info {
       margin-bottom: 1em;
     }
     p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.5em;
       font-family: $main-font;
       color: $copy-color;
@@ -521,5 +531,56 @@ section .contact-info {
       justify-content: center;
       flex-direction: row;
       align-items: center;
+  }
+}
+
+
+// mileston page
+
+.milestone-video {
+  display: flex;
+  justify-content: center;
+}
+
+.project-details {
+  margin: 3em 2em 0;
+  display: flex;
+  font-family: $main-font;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  a {
+    color: $copy-color;
+    &:hover {
+      color: gray;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: $main-font;
+    color: $copy-color;
+    text-align: left;
+    max-width: 600px;
+  }
+  .detail-color {
+    color: $jiva-blue;
+  }
+}
+
+.project-info {
+  margin: 3em 3em 6em;
+  display: flex;
+  font-family: $main-font;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: $main-font;
+    color: $copy-color;
+    text-align: justify;
+    max-width: 600px;
   }
 }
