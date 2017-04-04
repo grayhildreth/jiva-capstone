@@ -18,15 +18,17 @@
     height: 300px;
   }
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: $jiva-blue;
     text-align: center;
     padding: 1em 0;
+    font-family: $title-font;
+    text-decoration: none;
   }
 }
 
 .team-card p {
-  color: $copy-color;
+  // color: $copy-color;
   text-align: justify;
   font-family: $main-font;
   font-size: 16px;
