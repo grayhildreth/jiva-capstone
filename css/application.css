@@ -27,7 +27,8 @@ h1 {
   margin: 2em 0 1em;
   text-align: center;
   font-size: 2em;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; }
 
 .footer {
   display: flex;
