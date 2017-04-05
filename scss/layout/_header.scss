@@ -31,7 +31,7 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: $main-font;
+  font-family: $title-font;
 }
 
 #nav-header {
@@ -76,8 +76,8 @@ body {
   margin-left: 1.5em;
   color: $jiva-blue;
   text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 3px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 /* END NAVIGATION */
@@ -99,6 +99,7 @@ body {
     padding: 1rem;
     color: $jiva-blue;
     cursor: pointer;
+    letter-spacing: 1px;
   }
 
   .nav-ul {
@@ -119,7 +120,8 @@ body {
 
   .nav-link {
     padding: 1rem 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
     // border-bottom: 1px solid $jiva-blue;
   }
 }

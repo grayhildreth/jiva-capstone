@@ -13,8 +13,13 @@ body {
 
 p {
   font-family: $main-font;
-  color: $copy-color;
+  color: $font-color;
   font-size: 16px;
+}
+
+h1 {
+  font-family: $title-font;
+  letter-spacing: 1px;
 }
 
 .content {
@@ -25,6 +30,6 @@ p {
   margin: 2em 0 1em;
   text-align: center;
   font-size: 2em;
-  font-family: $main-font;
-  letter-spacing: 10px;
+  font-family: $title-font;
+  letter-spacing: 1px;
 }
