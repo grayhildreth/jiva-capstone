@@ -1,28 +1,5 @@
 // tech
 
-
-
-// .carousel-cell {
-//   width: 100%;
-//   height: 50vh;
-//   // margin-right: 10px;
-//   img {
-//     height: auto;
-//     width: 100vw;
-//     background-position: center;
-//     }
-// }
-
-// .carousel-cell {
-//   width: 66%; /* full width */
-//   height: 300px; /* height of carousel */
-//   margin-right: 10px;
-//   img {
-//     height: auto;
-//     width: 100%;
-//   }
-// }
-
 /* external css: flickity.css */
 
 * {
@@ -34,10 +11,10 @@
   width: 66%;
   height: auto;
   margin-right: 10px;
-    img {
-      height: auto;
-      width: 100%;
-    }
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .carousel-container {
@@ -59,35 +36,6 @@
   }
 }
 
-// .tech-detail {
-//   display: flex;
-//   // margin: 0em 3em;
-//   font-family: $main-font;
-//   background-color: white;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//     p {
-//       font-size: 16px;
-//       line-height: 1.5em;
-//       font-family: $main-font;
-//       // color: $copy-color;
-//       text-align: justify;
-//       max-width: 700px;
-//     }
-//   }
-
-  // .goggles {
-  //     display: flex;
-  //     justify-content: center;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     margin-bottom: 6em;
-  //     img {
-  //       width: 300px;
-  //     }
-  // }
-
 @media screen and (min-width: 700px) {
   .gallery-cell {
     width: 66%; /* full width */
@@ -97,12 +45,5 @@
       height: auto;
       width: 100%;
     }
-  }
-
-  .goggles {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
   }
 }
