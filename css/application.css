@@ -266,9 +266,29 @@ section .about2 {
   background-repeat: no-repeat;
   background-image: url("../img/headsets_02.jpg"); }
 
+section .what-we-do {
+  display: flex;
+  margin: 6em 3em 0;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  section .what-we-do h1 {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1em; }
+  section .what-we-do p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #999999;
+    text-align: justify;
+    max-width: 600px; }
+
 section .services {
   display: flex;
-  margin: 6em 3em;
+  margin: 0em 3em 6em 3em;
   flex-direction: column; }
   section .services h1 {
     font-family: "Roboto", sans-serif;
@@ -458,30 +478,28 @@ section .contact-info {
 
   .contact-detail {
     margin: 4em; } }
-.carousel-cell {
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.gallery-cell {
   width: 66%;
-  /* full width */
-  height: 300px;
-  /* height of carousel */
+  height: auto;
   margin-right: 10px; }
-  .carousel-cell img {
+  .gallery-cell img {
     height: auto;
     width: 100%; }
 
+.carousel-container {
+  margin-bottom: 4em; }
+
 .tech-detail {
   display: flex;
-  margin: 5em 3em;
-  font-family: "Abel", sans-serif;
-  background-color: white;
+  flex-direction: column;
+  margin: 3em 3em 4em;
   justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .tech-detail h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 2em;
-    text-align: left;
-    letter-spacing: 1px;
-    margin-bottom: 1em; }
+  align-items: center; }
   .tech-detail p {
     font-size: 16px;
     line-height: 1.5em;
@@ -489,28 +507,16 @@ section .contact-info {
     text-align: justify;
     max-width: 700px; }
 
-.goggles {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 6em; }
-  .goggles img {
-    width: 300px; }
-
-@media screen and (min-width: 641px) {
-  .carousel-cell {
+@media screen and (min-width: 700px) {
+  .gallery-cell {
     width: 66%;
     /* full width */
-    height: 700px;
+    height: auto;
     /* height of carousel */
     margin-right: 10px; }
-    .carousel-cell img {
+    .gallery-cell img {
       height: auto;
       width: 100%; }
-
-  .tech-detail {
-    margin: 8em 3em; }
 
   .goggles {
     display: flex;
@@ -553,7 +559,6 @@ section .contact-info {
     font-size: 16px;
     line-height: 1.5em;
     font-family: "Abel", sans-serif;
-    color: #404040;
     text-align: justify;
     max-width: 600px; }
 
