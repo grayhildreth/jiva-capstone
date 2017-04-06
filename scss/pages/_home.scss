@@ -163,10 +163,33 @@ section .about2 {
 
 // services
 
+section .what-we-do {
+  display: flex;
+  margin: 6em 3em 0;
+  font-family: $title-font;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: $main-font;
+    color: $font-color;
+    text-align: justify;
+    max-width: 600px;
+  }
+}
+
 section .services {
   display: flex;
   // width: 100vw;
-  margin: 6em 3em;
+  margin: 0em 3em 6em 3em;
   flex-direction: column;
   h1 {
     font-family: $title-font;

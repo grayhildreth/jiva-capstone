@@ -13,66 +13,90 @@
 //     }
 // }
 
-.carousel-cell {
-  width: 66%; /* full width */
-  height: 300px; /* height of carousel */
+// .carousel-cell {
+//   width: 66%; /* full width */
+//   height: 300px; /* height of carousel */
+//   margin-right: 10px;
+//   img {
+//     height: auto;
+//     width: 100%;
+//   }
+// }
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: auto;
   margin-right: 10px;
-  img {
-    height: auto;
-    width: 100%;
-  }
+    img {
+      height: auto;
+      width: 100%;
+    }
+}
+
+.carousel-container {
+  margin-bottom: 4em;
 }
 
 .tech-detail {
   display: flex;
-  margin: 5em 3em;
-  font-family: $main-font;
-  background-color: white;
+  flex-direction: column;
+  margin: 3em 3em 4em;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-    h1 {
-      // text-align: left;
-      font-family: $title-font;
-      font-size: 2em;
-      text-align: left;
-      letter-spacing: 1px;
-      margin-bottom: 1em;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.5em;
-      font-family: $main-font;
-      // color: $copy-color;
-      text-align: justify;
-      max-width: 700px;
-    }
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: $main-font;
+    text-align: justify;
+    max-width: 700px;
   }
+}
 
-  .goggles {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 6em;
-      img {
-        width: 300px;
-      }
-  }
+// .tech-detail {
+//   display: flex;
+//   // margin: 0em 3em;
+//   font-family: $main-font;
+//   background-color: white;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//     p {
+//       font-size: 16px;
+//       line-height: 1.5em;
+//       font-family: $main-font;
+//       // color: $copy-color;
+//       text-align: justify;
+//       max-width: 700px;
+//     }
+//   }
 
-@media screen and (min-width: 641px) {
-  .carousel-cell {
+  // .goggles {
+  //     display: flex;
+  //     justify-content: center;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     margin-bottom: 6em;
+  //     img {
+  //       width: 300px;
+  //     }
+  // }
+
+@media screen and (min-width: 700px) {
+  .gallery-cell {
     width: 66%; /* full width */
-    height: 700px; /* height of carousel */
+    height: auto; /* height of carousel */
     margin-right: 10px;
     img {
       height: auto;
       width: 100%;
     }
-  }
-
-  .tech-detail {
-    margin: 8em 3em;
   }
 
   .goggles {
