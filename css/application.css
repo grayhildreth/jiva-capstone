@@ -516,16 +516,11 @@ section .contact-info {
     margin-right: 10px; }
     .gallery-cell img {
       height: auto;
-      width: 100%; }
-
-  .goggles {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center; } }
+      width: 100%; } }
 .milestone-video {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 3em; }
 
 .project-details {
   margin: 3em 2em 0;
