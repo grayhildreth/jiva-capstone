@@ -507,16 +507,6 @@ section .contact-info {
     text-align: justify;
     max-width: 700px; }
 
-@media screen and (min-width: 700px) {
-  .gallery-cell {
-    width: 66%;
-    /* full width */
-    height: auto;
-    /* height of carousel */
-    margin-right: 10px; }
-    .gallery-cell img {
-      height: auto;
-      width: 100%; } }
 .milestone-video {
   display: flex;
   justify-content: center;
