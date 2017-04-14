@@ -206,7 +206,6 @@ section .services {
 }
 
 .text-drop {
-  visibility: hidden;
   display: none;
 }
 
@@ -242,6 +241,9 @@ section .services {
   }
   .mobile-copy {
     display: none;
+  }
+  .text-drop {
+    display: block;
   }
   section .about2 {
     display: flex;

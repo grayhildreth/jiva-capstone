@@ -322,7 +322,6 @@ section .services {
     cursor: pointer; }
 
 .text-drop {
-  visibility: hidden;
   display: none; }
 
 @media screen and (min-width: 700px) {
@@ -354,6 +353,9 @@ section .services {
 
   .mobile-copy {
     display: none; }
+
+  .text-drop {
+    display: block; }
 
   section .about2 {
     display: flex;
