@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.gallery-cell {
+.carousel-cell {
   width: 66%;
   height: auto;
   margin-right: 10px;
@@ -35,15 +35,3 @@
     max-width: 700px;
   }
 }
-
-// @media screen and (min-width: 700px) {
-//   .gallery-cell {
-//     width: 66%; /* full width */
-//     height: auto; /* height of carousel */
-//     margin-right: 10px;
-//     img {
-//       height: auto;
-//       width: 100%;
-//     }
-//   }
-// }

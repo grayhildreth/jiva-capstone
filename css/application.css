@@ -119,6 +119,8 @@ body {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px; }
+  .nav-link a:hover {
+    color: gray; }
 
 /* END NAVIGATION */
 /* MOBILE MENU */
@@ -296,12 +298,12 @@ section .services {
     text-align: center;
     letter-spacing: 1px; }
   section .services p {
+    font-family: "Abel", sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    font-family: "Abel", sans-serif;
-    color: #999999;
     text-align: justify;
-    max-width: 600px; }
+    max-width: 600px;
+    margin-top: 1em; }
   section .services .service-title {
     color: #1aa99f;
     font-family: "Roboto", sans-serif;
@@ -319,12 +321,39 @@ section .services {
     width: 96px;
     cursor: pointer; }
 
+.text-drop {
+  visibility: hidden;
+  display: none; }
+
 @media screen and (min-width: 700px) {
+  section .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0em 3em 3em 3em; }
+
   .icon-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
+
+  .service-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6em; }
+
+  .text-drop p {
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+    max-width: 600px; }
+
+  .mobile-copy {
+    display: none; }
 
   section .about2 {
     display: flex;
@@ -483,11 +512,11 @@ section .contact-info {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.gallery-cell {
+.carousel-cell {
   width: 66%;
   height: auto;
   margin-right: 10px; }
-  .gallery-cell img {
+  .carousel-cell img {
     height: auto;
     width: 100%; }
 
