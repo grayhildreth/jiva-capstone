@@ -94,27 +94,6 @@ section .home {
   }
 }
 
-
-
-
-// section .background-video {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     z-index: -1;
-//       img {
-//         width: 250px;
-//         margin-bottom: 2em;
-//       }
-//       p {
-//         font-family: $main-font;
-//         font-size: 3em;
-//         color: white;
-//         text-align: center;
-//       }
-//   }
-
   // about
 
   section .about {
@@ -197,14 +176,13 @@ section .services {
     text-align: center;
     letter-spacing: 1px;
   }
-  p {
+  p{
+    font-family: $main-font;
     font-size: 16px;
     line-height: 1.5em;
-    // margin-right: 3em;
-    font-family: $main-font;
-    color: $font-color;
     text-align: justify;
     max-width: 600px;
+    margin-top: 1em;
   }
   .service-title {
     color: $jiva-blue;
@@ -224,21 +202,46 @@ section .services {
     margin: 1em 0;
     width: 96px;
     cursor: pointer;
-    // p {
-    //   font-size: 1.35em;
-    //   line-height: 1.5em;
-    //   font-family: $main-font;
-    //   color: $copy-color;
-    // }
   }
 }
 
+.text-drop {
+  visibility: hidden;
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
+  section .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0em 3em 3em 3em;
+  }
   .icon-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .service-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6em;
+  }
+  .text-drop p {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+    max-width: 600px;
+  }
+  .mobile-copy {
+    display: none;
   }
   section .about2 {
     display: flex;
