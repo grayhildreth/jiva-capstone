@@ -52,124 +52,82 @@ body {
   margin: 0;
   padding: 0; }
 
-body {
-  max-height: 100vh; }
+header {
+  height: 45px; }
 
-#nav-container > nav > ul {
-  list-style-type: none; }
-
-/* NAVIGATION */
-#nav-background {
-  /*position: fixed;*/
-  top: 0;
-  z-index: 9000;
+.nav-container {
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
   background-color: #313030; }
 
-#nav-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.nav-container ul {
   display: flex;
-  max-width: 100%;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif; }
+  padding-right: 1em;
+  list-style-type: none;
+  color: #1aa99f; }
 
-#nav-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-#nav-logo {
-  margin-left: 1em; }
-
-.nav-ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 700px; }
-
-.nav-ul > li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.nav-link {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  /*flex: 1;*/
-  margin-left: 1.5em;
+.nav-container li {
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
   color: #1aa99f;
-  text-decoration: none;
   font-size: 12px;
-  letter-spacing: 1px; }
-  .nav-link a:hover {
+  letter-spacing: 1px;
+  margin-left: 4.7em; }
+  .nav-container li a {
+    text-decoration: none;
+    color: #1aa99f;
+    line-spacing: 1px; }
+  .nav-container li a:hover {
     color: gray; }
 
-/* END NAVIGATION */
-/* MOBILE MENU */
-@media screen and (max-width: 700px) {
-  #nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center; }
+#nav-title {
+  margin-left: 1em; }
 
-  #nav-menu-button {
-    padding: 1rem;
-    color: #1aa99f;
-    cursor: pointer;
-    letter-spacing: 1px; }
+.menu-button {
+  cursor: pointer;
+  margin-right: 1em;
+  color: #1aa99f;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; }
 
-  .nav-ul {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    overflow-y: scroll;
-    direction: rtl;
-    max-height: 80vh; }
+#mobile-menu {
+  max-width: 700px;
+  background-color: #313030;
+  display: flex;
+  position: relative; }
 
-  .hide-ul {
-    max-height: 0vh; }
+#mobile-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none; }
 
-  .nav-link {
-    padding: 1rem 0;
-    font-size: 1rem;
-    letter-spacing: 1px; } }
-/* END MOBILE MENU */
-/* DESKTOP MENU */
-@media screen and (min-width: 701px) {
-  #nav-menu-button {
+#mobile-menu li {
+  padding: 1em 0;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px; }
+
+#mobile-menu a {
+  text-decoration: none;
+  color: #1aa99f;
+  letter-spacing: 1px; }
+
+.nav-container > .desktop-menu {
+  display: none; }
+
+@media screen and (min-width: 700px) {
+  .menu-button {
     display: none; }
 
-  .nav-link {
-    padding: 1rem 1.5rem; } }
-/* This moves the logo so that it's not touching the left side */
-@media screen and (max-width: 1040px) {
-  #nav-logo {
-    margin-left: 1rem; } }
-/* END DESKTOP MENU */
+  .nav-container > .desktop-menu {
+    display: flex; } }
 @media screen and (max-width: 999px) {
   .video-home {
     display: none; }
@@ -489,6 +447,8 @@ section .contact-info {
     align-self: center;
     justify-content: center;
     margin: 1em 0; }
+  .contact-detail p:hover {
+    color: gray; }
   .contact-detail a {
     color: #404040; }
     .contact-detail a:hover {

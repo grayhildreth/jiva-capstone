@@ -31,6 +31,9 @@ section .contact-info {
     justify-content: center;
     margin: 1em 0;
   }
+  p:hover {
+    color: gray;
+  }
   a {
     color: $copy-color;
     &:hover {
