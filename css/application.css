@@ -279,6 +279,12 @@ section .services {
     width: 96px;
     cursor: pointer; }
 
+.trans {
+  transition: all .5s ease-in-out; }
+
+.trans:hover {
+  transform: scale(1.25); }
+
 .text-drop {
   display: none; }
 

@@ -205,6 +205,16 @@ section .services {
   }
 }
 
+.trans{
+  transition: all .5s ease-in-out;
+}
+.trans:hover {
+  transform: scale(1.25);
+}
+
+.icon-grow {
+}
+
 .text-drop {
   display: none;
 }
