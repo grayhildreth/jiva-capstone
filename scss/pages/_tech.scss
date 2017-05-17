@@ -7,15 +7,31 @@
   box-sizing: border-box;
 }
 
-.carousel-cell {
-  width: 66%;
-  height: auto;
+.carousel {
+  background: #EEE;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
   margin-right: 10px;
-  img {
-    height: auto;
-    width: 100%;
+}
+
+@media screen and ( min-width: 700px ) {
+  .carousel img {
+    height: 400px;
   }
 }
+
+// .carousel-cell {
+//   width: 66%;
+//   height: auto;
+//   margin-right: 10px;
+//   img {
+//     height: auto;
+//     width: 100%;
+//   }
+// }
 
 .carousel-container {
   margin-bottom: 4em;
