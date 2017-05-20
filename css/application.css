@@ -482,9 +482,6 @@ section .contact-info {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.carousel {
-  background: #EEE; }
-
 .carousel img {
   display: block;
   height: 200px;
