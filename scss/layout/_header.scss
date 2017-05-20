@@ -43,6 +43,9 @@ header {
 
 #nav-title {
   margin-left: 1em;
+  img:hover {
+    -webkit-filter: grayscale(100%);
+  }
 }
 
 .menu-button {
