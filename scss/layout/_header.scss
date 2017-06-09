@@ -5,6 +5,8 @@ body {
 
 header {
   height: 45px;
+  position: relative;
+  z-index: 100;
 }
 
 .nav-container {

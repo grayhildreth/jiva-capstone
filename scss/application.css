@@ -53,9 +53,7 @@ body {
   padding: 0; }
 
 header {
-  height: 45px;
-  position: relative;
-  z-index: 100; }
+  height: 45px; }
 
 .nav-container {
   width: 100%;
@@ -160,10 +158,6 @@ header {
       text-align: center;
       letter-spacing: 10px; } }
 @media screen and (min-width: 1000px) {
-  body {
-    margin: 0;
-    padding: 0; }
-
   .video {
     position: absolute;
     left: 0;
@@ -173,11 +167,11 @@ header {
 
   .video iframe {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     height: 100%; }
 
-  .hero-overlay {
+  .video-overlay {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -191,7 +185,13 @@ header {
     justify-content: center; }
     .hero-content img {
       margin-bottom: 2em;
-      align-self: center; } }
+      align-self: center; }
+    .hero-content p {
+      font-family: cursive;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px; } }
 section .about {
   display: flex;
   margin: 6em 3em;
@@ -219,7 +219,7 @@ section .about2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../img/maui-aerial.jpg"); }
+  background-image: url("../img/headsets_02.jpg"); }
 
 section .what-we-do {
   display: flex;
@@ -239,7 +239,7 @@ section .what-we-do {
     font-family: "Abel", sans-serif;
     color: #999999;
     text-align: justify;
-    max-width: 700px; }
+    max-width: 600px; }
 
 section .services {
   display: flex;
@@ -255,7 +255,7 @@ section .services {
     font-size: 17px;
     line-height: 1.5em;
     text-align: justify;
-    max-width: 700px;
+    max-width: 600px;
     margin-top: 1em; }
   section .services .service-title {
     color: #1aa99f;
@@ -264,7 +264,7 @@ section .services {
 
 .service-icon {
   display: flex;
-  margin-top: 2em;
+  margin-top: 5em;
   flex-direction: column;
   align-items: center; }
   .service-icon img {
@@ -308,7 +308,7 @@ section .services {
     font-size: 17px;
     line-height: 1.5em;
     text-align: justify;
-    max-width: 700px; }
+    max-width: 600px; }
 
   .mobile-copy {
     display: none; }
@@ -316,7 +316,7 @@ section .services {
   .text-drop {
     display: block; }
 
-  .about2 {
+  section .about2 {
     display: flex;
     height: 50vh;
     max-width: 100vw;
@@ -324,74 +324,7 @@ section .services {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../img/maui-aerial.jpg"); } }
-.products-detail {
-  display: flex;
-  flex-direction: column;
-  margin: 3em 3em 4em;
-  justify-content: center;
-  align-items: center; }
-  .products-detail p {
-    font-size: 17px;
-    line-height: 1.5em;
-    font-family: "Abel", sans-serif;
-    text-align: justify;
-    max-width: 700px; }
-
-.specs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2em 0; }
-  .specs img {
-    width: 200px; }
-  .specs h2 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    line-height: 1.5em;
-    margin: 1em 3em; }
-  .specs ul {
-    font-family: "Abel", sans-serif;
-    font-size: 17px;
-    color: #999999; }
-  .specs li {
-    line-height: 1.5em; }
-
-.delivery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3em; }
-
-.performance {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3em; }
-
-@media screen and (min-width: 700px) {
-  .specs {
-    flex-direction: row;
-    align-items: baseline; }
-    .specs img {
-      width: 300px; }
-    .specs h2 {
-      margin: 1em 0; }
-
-  .delivery {
-    margin-right: 3em; }
-
-  .performance {
-    margin-left: 3em; }
-
-  .line2 {
-    align-self: flex-start;
-    height: 500px;
-    width: 3px;
-    background-color: #1aa99f; } }
+    background-image: url("../img/headsets_02.jpg"); } }
 .team-card {
   display: flex;
   flex-direction: column;
