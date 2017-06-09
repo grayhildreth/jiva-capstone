@@ -4,10 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/application.css">
   <link rel="stylesheet" href="css/reset.css">
-  <script src="js/flickity.pkgd.min.js"></script>
 
 
 
@@ -21,9 +20,11 @@
 
   <header>
     <div class="nav-container">
-      <a id="nav-title" href="index.html"><img src="img/nav-logo.png" width=35px alt=""></a>
+      <a class="hover-logo" id="nav-title" href="index.html"><img src="img/nav-logo.png" width=35px alt=""></a>
       <div class="menu-button">MENU</div>
       <ul class="desktop-menu">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
         <li><a href="tech.html">TECH</a></li>
         <li><a href="team.html">TEAM</a></li>
         <li><a href="work.html">WORK</a></li>
@@ -32,6 +33,8 @@
     </div>
     <div id="mobile-menu" style="display:none;">
       <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
         <li><a href="tech.html">TECH</a></li>
         <li><a href="team.html">TEAM</a></li>
         <li><a href="work.html">WORK</a></li>
@@ -55,22 +58,19 @@
     <p>The end result is a powerful business tool offers unlimited possibilities for 360 brand messaging, product demonstration, education, training, or entertainment.</p>
   </div>
 
+
   <div class="carousel-container">
-    <div class="carousel js-flickity"
-    data-flickity-options='{ "wrapAround": true }'>
-    <!-- <div class="carousel-cell"><img src="img/carousel/caro1.jpg" alt=""></div>
-    <div class="carousel-cell"><img src="img/carousel/caro2.jpg" alt=""></div>
-    <div class="carousel-cell"><img src="img/carousel/caro3.jpg" alt=""></div>
-    <div class="carousel-cell"><img src="img/carousel/caro4.jpg" alt=""></div>
-    <div class="carousel-cell"><img src="img/carousel/caro5.jpg" alt=""></div>
-    <div class="carousel-cell"><img src="img/carousel/caro6.jpg" alt=""></div> -->
-    <img src="img/carousel/caro1.jpg" alt="">
-    <img src="img/carousel/caro2.jpg" alt="">
-    <img src="img/carousel/caro3.jpg" alt="">
-    <img src="img/carousel/caro4.jpg" alt="">
-    <img src="img/carousel/caro5.jpg" alt="">
-    <img src="img/carousel/caro6.jpg" alt="">
+
+    <div class="carousel"
+    data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+    <img src="img/carousel/caro1.jpg" alt="orange tree" />
+    <img src="img/carousel/caro2.jpg" alt="submerged" />
+    <img src="img/carousel/caro3.jpg" alt="submerged" />
+    <img src="img/carousel/caro4.jpg" alt="submerged" />
+    <img src="img/carousel/caro5.jpg" alt="submerged" />
+    <img src="img/carousel/caro6.jpg" alt="submerged" />
   </div>
+
 </div>
 
 <!-- footer -->
@@ -87,6 +87,7 @@
     <p>©2017 Jiva VR Inc.</p>
   </div>
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
 
