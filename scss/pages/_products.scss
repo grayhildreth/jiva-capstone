@@ -1,7 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .products-detail {
   display: flex;
   flex-direction: column;
-  margin: 3em 3em 4em;
+  margin: 3em 3em 1em;
   justify-content: center;
   align-items: center;
   p {
@@ -10,17 +16,6 @@
     font-family: $main-font;
     text-align: justify;
     max-width: 700px;
-  }
-}
-
-.specs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2em 0;
-  img {
-    width: 200px;
   }
   h2 {
     font-family: $title-font;
@@ -36,48 +31,127 @@
   li {
     line-height: 1.5em;
   }
+  img {
+    display: none;
+  }
 }
 
-.delivery {
+.specs {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2em;
+  h2 {
+    font-family: $title-font;
+    text-align: left;
+    // line-height: 1.5em;
+  }
+  ul {
+    font-family: $main-font;
+    font-size: 17px;
+    color: $font-color;
+  }
+  li {
+    line-height: 1.5em;
+  }
+}
+
+.product {
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3em;
+  margin: 2em 3em;
 }
 
-.performance {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: $main-font;
+  color: $jiva-blue;
+  font-size: 17px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid $jiva-blue 1px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2em 0;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+.features {
+  margin: 0 1em 0;
+  h2 {
+    font-family: $main-font;
+    font-size: 24px;
+  }
+  h3 {
+    font-family: $title-font;
+    line-height: 1.5em;
+  }
+}
+
+.product-carousel img {
+  height: 300px;
+  width: auto;
+}
+
+.product-carousel {
+  width: 300px;
+  margin-bottom: 2em;
+}
+
+.product-carousel-container {
+  display: flex;
+  margin: 0 1em 4em;
   align-items: center;
-  margin-bottom: 3em;
+  justify-content: center;
 }
 
 @media screen and (min-width: 700px) {
+  .products-detail img {
+    display: block;
+    width: 700px;
+    padding: 3em 0;
+  }
+
   .specs {
+    display: block;
     flex-direction: row;
     align-items: baseline;
     img {
       width: 300px;
     }
-    h2 {
-      margin: 1em 0;
-    }
   }
 
-  .delivery {
-    margin-right: 3em;
+  .product {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3em;
   }
 
-  .performance {
-    margin-left: 3em;
+  .product-carousel img {
+    height: 400px;
+    width: auto;
   }
 
-  .line2 {
-    align-self: flex-start;
-    height: 500px;
-    width: 3px;
-    background-color: $jiva-blue;
+  .product-carousel {
+    width: 400px;
   }
 }
