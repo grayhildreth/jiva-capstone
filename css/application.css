@@ -662,4 +662,10 @@ section .contact-info {
     text-align: justify;
     max-width: 600px; }
 
+.rancho-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em; }
+
 /*# sourceMappingURL=application.css.map */
