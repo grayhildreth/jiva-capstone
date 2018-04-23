@@ -138,6 +138,13 @@ button:focus {
     }
   }
 
+  .line2 {
+    margin-top: 5em;
+    width: 600px;
+    height: 3px;
+    background-color: $jiva-blue;
+  }
+
   .product {
     display:flex;
     flex-direction: row;

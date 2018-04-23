@@ -437,6 +437,12 @@ button:focus {
     .specs img {
       width: 300px; }
 
+  .line2 {
+    margin-top: 5em;
+    width: 600px;
+    height: 3px;
+    background-color: #1aa99f; }
+
   .product {
     display: flex;
     flex-direction: row;
